@@ -1,0 +1,22 @@
+body {
+   background-color: #B4CFCC;
+   color: #47424D;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+    margin: .25em 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #47424D;
+}
+a:hover {
+    color: #9CE8B4;
+}

@@ -1,10 +1,9 @@
 const cardContainer = document.getElementById("card-containter");
 
-
 let urlParams = new URLSearchParams(location.search);
-let characterId = urlParams.get("id");
+let characterId = Math.floor(Math.random() * 13) + 1;
 
-fetch(`https://animation-backend.onrender.com/characters/9`)
+fetch(`https://animation-backend.onrender.com/characters/${characterId}`)
   .then((res) => res.json())
   .then((data) => {
     cardContainer.innerHTML = `
@@ -14,4 +13,4 @@ fetch(`https://animation-backend.onrender.com/characters/9`)
             <img src="${data.imageUrl}" id="card-img" width=200>
         </div>
         `;
-  })
+  });
