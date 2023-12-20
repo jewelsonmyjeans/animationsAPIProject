@@ -1,0 +1,20 @@
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card-body {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.character-image {
+    max-width: 100%;
+    height: auto;
+}
+h1 {
+    text-align: center;
+}

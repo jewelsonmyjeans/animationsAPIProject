@@ -9,7 +9,7 @@ window.onload = () => {
                 characters.forEach((character) => {
                     cardContainer.innerHTML += `
                         <div class="card-body">
-                            <h2 class="card-title" id="character-name">Name: ${character.name}</h2>
+                            <h2 class="card-title" id="character-name">${character.name}</h2>
                             <p class="card-text" id="show-name">Show Name: ${character.showName}</p>
                             <img src="${character.imageUrl}" alt="${character.name}" class="character-image">
                         </div>
